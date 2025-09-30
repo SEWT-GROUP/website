@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../src/favicon.svg" />
+    <title>Sun Energy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../src/styles.css">
+</head>
+
+<body class="bg-[#f8f9fa] text-[#212529]">
+    <!-- Navbar -->
+    <nav class=" pb-1 fixed w-full bg-white z-10 shadow-md">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center justify-between">
+                <!-- Mobile menu button-->
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                    <button type="button" command="--toggle" commandfor="mobile-menu"
+                        class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
+                        <span class="absolute -inset-0.5"></span>
+                        <span class="sr-only">Open main menu</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#005792" stroke-width="2" data-slot="icon"
+                            aria-hidden="true" class="size-8 in-aria-expanded:hidden">
+                            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
+                    <div class="flex shrink-0 items-center">
+                        <a href="../index.html">
+                            <img src="../src/brand-name.jpg" alt="SEWT Logo" class="h-12 md:h-14">
+                        </a>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:block">
+                        <div class="flex items-center gap-6">
+                            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+                            <div class="text-lg font-bold text-center transition duration-300 p-3">
+                                <a href="../index.html" class="nav-title-hover">Acceuil</a>
+                            </div>
+                            <div class=" text-lg font-bold text-center transition duration-300">
+                                <a href="about.html" class="nav-title-hover">Le Groupe</a>
+                            </div>
+                            <div class=" text-lg font-bold text-center service-page transition duration-300">
+                                <a href="services.html" class="nav-title-hover">Nos Services</a>
+                            </div>
+                            <div class=" text-lg font-bold text-center transition duration-300">
+                                <a href="projects.html" class="nav-title-hover">Nos Réalisations</a>
+                            </div>
+                            <div class=" text-lg font-bold text-center transition duration-300">
+                                <a href="contact.html" class="nav-title-hover">Contact</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+
+        <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
+            <div class="space-y-1 px-2 pt-2 pb-3">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+                <div class="text-bg-color text-lg transition duration-300">
+                    <a href="../index.html">Acceuil</a>
+                </div>
+                <div class="text-bg-color font-bold text-lg transition duration-300">
+                    <a href="about.html">Le Groupe</a>
+                </div>
+                <div class="text-bg-color font-bold text-lg transition duration-300">
+                    <a href="services.html">Nos Services</a>
+                </div>
+                <div class="text-bg-color font-bold text-lg transition duration-300">
+                    <a href="projects.html">Nos Réalisations</a>
+                </div>
+                <div class="text-bg-color font-bold text-lg transition duration-300">
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </el-disclosure>
+    </nav>
+
+    <div class="pt-20 bg-white">
+        <!-- Services Highlight -->
+        <div class="bg-gray-50 py-20">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold text-[#005792] text-center mb-10">Nos Services</h2>
+                <div class="grid gap-8 ">
+                    <!-- Photovoltaïque Service -->
+                    <div class="service-card">
+                        <div
+                            class="grid md:grid-cols-2  bg-[url('../src/services/pv_hold.jpeg')] bg-black bg-opacity-40 bg-no-repeat bg-cover">
+                            <div class="service-image-wrapper bg-black bg-opacity-40  ">
+                                <div class=""></div>
+                                <!-- <img src="../src/services/service_pv.png" alt="Service Photovoltaïque"
+                                    class="service-image" loading="lazy"> -->
+                            </div>
+                            <div class="p-6 lg:p-8 bg-black bg-opacity-70">
+                                <h3 class="text-2xl uppercase font-semibold brand-orange mb-4">Photovoltaïque</h3>
+                                <p class="text-white mb-4 leading-relaxed">
+                                    Forts de nombreuses années d'expérience, nous sommes spécialisés
+                                    dans la conception et l'installation de systèmes photovoltaïques pour divers
+                                    types
+                                    de
+                                    bâtiments tels que des maisons individuelles, locaux professionnels, hôtels,
+                                    usines,
+                                    exploitations agricoles.
+                                </p>
+                                <p class="text-white leading-relaxed">
+                                    Notre équipe d'installateurs photovoltaïques qualifiés vous accompagne dans la
+                                    réalisation de votre projet pour atteindre des économies significatives, un
+                                    impact
+                                    environnemental réduit et une solution durable garantissant une durée de vie de
+                                    25
+                                    ans
+                                    avec peu d'entretien.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Thermique Service -->
+                    <div class="service-card">
+                        <div class="grid md:grid-cols-2 bg-[url('../src/services/therm_cover_4.jpeg')] bg-black bg-opacity-40 bg-no-repeat bg-cover">
+                            <div class="p-6 lg:p-8 md:order-1 bg-black bg-opacity-70">
+                                <h3 class="text-2xl uppercase font-semibold brand-orange mb-4">Thermique</h3>
+                                <p class="text-white mb-4 leading-relaxed">
+                                    Les solutions thermiques utilisent la chaleur ambiante pour
+                                    produire de l'eau chaude, répondant ainsi à vos besoins quotidiens d'eau chaude
+                                    sanitaire ou de chauffage.
+                                </p>
+                                <p class="text-white leading-relaxed">
+                                    L'installation d'une pompe à chaleur air-eau est la solution idéale pour faire des
+                                    économies d'énergie. Son rendement élevé en fait une alternative compétitive aux
+                                    chaudières classiques. Par ailleurs, en plus du chauffage en hiver, la pompe à
+                                    chaleur
+                                    air-eau offre un rafraîchissement en été grâce à sa réversibilité.
+                                </p>
+                            </div>
+                            <div class="service-image-wrapper md:order-2 bg-black bg-opacity-40">
+                                <div></div>
+                                <!-- <img src="../src/services/service_thermique.png" alt="Service Thermique"
+                                    class="service-image" loading="lazy"> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exploitation et Maintenance Service -->
+                    <div class="service-card">
+                        <div class="grid md:grid-cols-2 bg-[url('../src/services/service_maintenance.png')] bg-black bg-opacity-40 bg-no-repeat bg-cover">
+                            <div class="service-image-wrapper bg-black bg-opacity-40">
+                                <!-- <img src="../src/services/service_maintenance.png" alt="Service Maintenance"
+                                class="service-image" loading="lazy"> -->
+                            </div>
+                            <div class="p-6 lg:p-8 bg-black bg-opacity-70">
+                                <h3 class="text-2xl uppercase font-semibold brand-orange mb-4">Exploitation et Maintenance</h3>
+                                <p class="text-white mb-4 leading-relaxed">
+                                    Pour garantir le bon fonctionnement de votre installation
+                                    photovoltaïque, la maintenance préventive est une étape clé. Elle permet de détecter
+                                    en
+                                    amont les éventuels dysfonctionnements (perte de rendement, usure des composants,
+                                    défaillance électrique) avant qu'ils ne deviennent critiques.
+                                </p>
+                                <p class="text-white mb-4 leading-relaxed">
+                                    Notre service de télé-surveillance surveille en continu vos installations
+                                    énergétiques.
+                                    Nous analysons les données en temps réel, identifions les déviations et prenons des
+                                    mesures immédiates pour rétablir la performance optimale.
+                                </p>
+                                <p class="text-white mb-4 leading-relaxed">
+                                    Nos équipes expertes assurent un suivi rigoureux de votre centrale afin d'optimiser
+                                    sa
+                                    performance et de garantir la sécurité de votre site. Avec nous, vous bénéficiez
+                                    d'un
+                                    accompagnement fiable et conforme aux exigences techniques du secteur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- END OF SERVICES LIST -->
+    
+
+
+    <div class="text-center mt-10">
+        <a href="../index.html" class="text-[#ff6f00] font-semibold hover:underline">&larr; Retour </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white py-6 text-center text-gray-600 shadow-inner mt-12">
+        <div class="container mx-auto px-6">
+            <p>&copy; 2025 SEWT-GROUP. Tous droits réservés.</p>
+        </div>
+    </footer>
+        <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+    <script src="src/script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</body>
+
+</html>

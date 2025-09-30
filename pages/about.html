@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="../src/favicon.svg" />
+    <title>Sun Energy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../src/styles.css">
+</head>
+
+<body class="bg-[#f8f9fa] text-[#212529]  ">
+
+    <!-- Navbar -->
+    <nav class=" pb-1 fixed w-full bg-white z-10 shadow-md">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center justify-between">
+                <!-- Mobile menu button-->
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                    <button type="button" command="--toggle" commandfor="mobile-menu"
+                        class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-indigo-500">
+                        <span class="absolute -inset-0.5"></span>
+                        <span class="sr-only">Open main menu</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#005792" stroke-width="2" data-slot="icon"
+                            aria-hidden="true" class="size-8 in-aria-expanded:hidden">
+                            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
+                    <div class="flex shrink-0 items-center">
+                        <a href="../index.html">
+                            <img src="../src/brand-name.jpg" alt="SEWT Logo" class="h-12 md:h-14">
+                        </a>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:block">
+                        <div class="flex items-center gap-6">
+                            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+                            <div class="text-lg font-bold text-center transition duration-300 p-3">
+                                <a href="../index.html" class="nav-title-hover">Acceuil</a>
+                            </div>
+                            <div class=" text-lg font-bold text-center about-page transition duration-300">
+                                <a href="about.html" class="nav-title-hover">Le Groupe</a>
+                            </div>
+                            <div class=" text-lg font-bold text-center transition duration-300">
+                                <a href="services.html" class="nav-title-hover">Nos Services</a>
+                            </div>
+                            <div class=" text-lg font-bold text-center transition duration-300">
+                                <a href="projects.html" class="nav-title-hover">Nos Réalisations</a>
+                            </div>
+                            <div class=" text-lg font-bold text-center transition duration-300">
+                                <a href="contact.html" class="nav-title-hover">Contact</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+
+        <el-disclosure id="mobile-menu" hidden class="block sm:hidden">
+            <div class="space-y-1 px-2 pt-2 pb-3">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
+                <div class="text-bg-color text-lg transition duration-300">
+                    <a href="../index.html">Acceuil</a>
+                </div>
+                <div class="text-bg-color font-bold text-lg transition duration-300">
+                    <a href="about.html">Le Groupe</a>
+                </div>
+                <div class="text-bg-color font-bold text-lg transition duration-300">
+                    <a href="services.html">Nos Services</a>
+                </div>
+                <div class="text-bg-color font-bold text-lg transition duration-300">
+                    <a href="projects.html">Nos Réalisations</a>
+                </div>
+                <div class="text-bg-color font-bold text-lg transition duration-300">
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </el-disclosure>
+    </nav>
+
+    <div class="pt-20 bg-white max-w-fit mx-auto">
+        <!-- About Us Page -->
+        <!-- <div class="py-20 px-10 bg-gray-50"> -->
+        <!-- <div class="grid grid-col-1 gap-10"> -->
+
+        <!-- <div class="p-16 bg-[url('../src/Siteweb-LeGroupe.jpeg')] bg-cover bg-center relative">
+            <div class="max-w-fit mx-auto h-64 rounded-xl overflow-hidden shadow-lg">
+                
+            </div>
+        </div> -->
+        <div class="bg-gray-100 py-20 md:py-15">
+            <div class=" px-4 text-center">
+                <div class="bg-cover bg-center rounded-xl overflow-hidden shadow-xl h-auto"
+                    style="background-image: url('../src/Siteweb-LeGroupe.jpeg');">
+                    <div class="bg-black bg-opacity-50  p-24 px-16">
+                        <h1 class="text-5xl py-8  px-2 text-center font-bold text-white mb-4">Sun Energy and Water
+                            Technologies, le
+                            groupe</h1>
+                        <h1 class="text-5xl  py-4 text-center font-bold text-white mb-4"><span
+                                class="text-6xl text-white">&ldquo;</span>L’accès à
+                            l’énergie solaire pour tous<span class="text-6xl text-white">&bdquo;</span></h1>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-6 lg:flex-row lg:gap-20 max-w-fit mx-auto">
+            <div class="lg:px-16 lg:py-8 ">
+                <!-- <h1 class="text-4xl py-4 text-center font-bold brand-orange mb-4"><span
+                        class="text-6xl text-[#005792]">&ldquo;</span>L’accès à
+                    l’énergie solaire pour tous <span class="text-6xl text-[#005792]">&bdquo;</span></h1> -->
+                <!-- <h1 class="text-4xl py-4 font-bold slogon mb-4"><span class="text-6xl text-[#005792]">&ldquo;</span>L’accès à
+                    l’énergie solaire pour tous <span class="text-6xl text-[#005792]">&rdquo;</span></h1> -->
+                <div class="history flex flex-col  lg:flex-row lg:gap-16 w-full p-6 ">
+
+                    <div class="founder-image max-w-fit mx-auto py-6">
+                        <div class="bg-cover px-7 py-20 bg-center rounded-xl overflow-hidden shadow-lg h-auto"
+                            style="background-image: url('../src/foundateur.jpg');">
+                            <div class="bg-black bg-opacity-0 p-20 p-40">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl py-4 font-bold text-[#005792] mb-4">Notre histoire</h2>
+                        <p class="text-gray-700 text-lg leading-relaxed justify-text">L’histoire de SEWT trouve son
+                            origine
+                            dans
+                            le
+                            propre
+                            parcours de son fondateur. Thermicien de formation, M. Ali HAJJI a consacré 25 ans à
+                            la
+                            recherche et le développement dans les domaines de l’efficacité énergétiques, des
+                            énergies
+                            renouvelables et de la thermique industrielle. Ses travaux ont contribué largement à
+                            familiariser un grand nombre d’acteurs avec ces technologies. En 2010, un constat
+                            s’est
+                            imposé :
+                            la technologie photovoltaïque est enfin devenue mature et le marché marocain est
+                            prêt à
+                            l’adopter !</p>
+                        <p class="text-gray-700 text-lg leading-relaxed justify-text">En effet, au-delà d’être une
+                            énergie
+                            décarbonée,
+                            renouvelable et accessible partout, l’énergie solaire est avant tout devenue
+                            rentable!
+                            Les
+                            progrès technologiques et la baisse des coûts des dernières années en ont fait une
+                            des
+                            énergies
+                            les plus compétitives et performantes quand elle est mise en œuvre correctement.</p>
+                        <p class="text-gray-700 text-lg leading-relaxed justify-text">Aujourd’hui, il continue
+                            d'explorer ce qui est possible en matière d’énergie propre, en cherchant constamment de
+                            nouvelles technologies et de nouveaux partenariats pour offrir les meilleures solutions à
+                            ses partenaires et contribuer à une planète plus durable.</p>
+                        <p class="text-gray-700 text-lg leading-relaxed justify-text"> Sun Energy and Water Technologies
+                            Group a
+                            été
+                            créée avec
+                            la
+                            conviction de faire de l’énergie solaire un pilier majeurs de la transition
+                            énergétique
+                            voulu
+                            pour le Royaume.</p>
+                        <br>
+                    </div>
+                </div>
+                <br>
+                <div class="team flex flex-col items-center xl:flex-row lg:gap-16 ">
+                    <!-- <div class="team-image max-w-fit mx-auto sm:hidden">
+                        <div class="bg-cover px-7 py-20 bg-center rounded-xl overflow-hidden shadow-lg h-auto"
+                            style="background-image: url('../src/team_pic_2.jpeg');">
+                            <div class="bg-black bg-opacity-0 p-20 p-40">
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="team-image max-w-fit px-4 sm:hidden">
+                        <!-- <div class="bg-fit bg-no-repeat px-10 py-2 bg-center rounded-xl overflow-hidden shadow-lg h-auto"
+                                style="background-image: url('../src/team_pic_2.jpeg');">
+                                <div class="bg-black bg-opacity-0 p-80">
+                                </div>
+                            </div> -->
+                        <img src="../src/team_hold.jpeg" alt="" srcset=""
+                            class="rounded-xl shadow-lg overflow-hidden sm:max-w-fit">
+                    </div>
+                    <div class="py-8 px-4">
+                        <h2 class="text-3xl font-bold text-[#005792] mb-4">Notre force</h2>
+                        <p class="text-gray-700 text-lg leading-relaxed justify-text">SEWT Group c’est avant tout une
+                            équipe
+                            active
+                            dans
+                            l’énergie photovoltaïque depuis 15 ans,
+                            disposant d’une expérience solide, aussi bien sur les installations résidentielles
+                            que
+                            professionnelles.</p>
+                        <p class="text-gray-700 text-lg leading-relaxed justify-text">SEWT Group se positionne comme un
+                            véritable
+                            expert en
+                            solutions photovoltaïques et de la
+                            transition énergétique. Forts de plus de 15 ans d'expérience, nous accompagnons
+                            chaque
+                            jour
+                            nos
+                            clients, particuliers et professionnels, dans leur démarche vers une énergie plus
+                            propre
+                            et
+                            plus
+                            économique.</p>
+                        <p class="text-gray-700 text-lg leading-relaxed justify-text">En tant que professionnels des
+                            énergies
+                            renouvelables, nous
+                            détenons les qualifications
+                            nécessaires pour garantir à nos partenaires des installations de qualité et
+                            conformes
+                            aux
+                            normes
+                            et réglementations en vigueur. Ceci passe par des études sur mesure, une sélection
+                            de
+                            matériel
+                            premium et sans compromis, une installation par nos équipes expertes, un SAV et
+                            suivi
+                            réactif,
+                            et surtout un accompagnement et une proximité à chaque étape.</p>
+                    </div>
+                    <div class="team-image   px-4 max-sm:hidden">
+                        <!-- <div class="bg-fit bg-no-repeat px-10 py-2 bg-center rounded-xl overflow-hidden shadow-lg h-auto"
+                                style="background-image: url('../src/team_pic_2.jpeg');">
+                                <div class="bg-black bg-opacity-0 p-80">
+                                </div>
+                            </div> -->
+                        <img src="../src/team_hold.jpeg" alt="" srcset=""
+                            class="rounded-xl shadow-lg overflow-hidden max-w-2xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- KPI -->
+        <!-- <div class="">
+                    <div>
+                        <h1 class="text-4xl font-bold text-[#005792] mb-4  md:text-center">Chiffres Clés</h1>
+                    </div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-8 p-6  rounded-lg">
+                        <div class="flex flex-col justify-start gap-1 items-center">
+                            <div
+                                class="flex flex-col h-20 w-20 rounded-full border-4 border-orange-500 items-center justify-center">
+                                <p class="review-text-val">1200</p>
+                            </div>
+                            <div class="flex items-center justify-center ">
+                                <p class="text-center review-text">Nombre d'installations en service</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-start gap-1 items-center ">
+                            <div
+                                class="flex h-20 w-20 rounded-full border-4 border-orange-500 items-center justify-center">
+                                <p class="review-text-val">25</p>
+                            </div>
+                            <div>
+                                <p class="text-center review-text">Années de garantie sur le matériel proposé</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-start gap-1 items-center ">
+                            <div
+                                class="flex h-20 w-20 rounded-full border-4 border-orange-500 items-center justify-center">
+                                <p class="review-text-val">200</p>
+                            </div>
+                            <div>
+                                <p class="text-center review-text">Avis Google 5 étoiles</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-start gap-1 items-center ">
+                            <div
+                                class="flex h-20 w-20 rounded-full border-4 border-orange-500 items-center justify-center">
+                                <p class="review-text-val">15</p>
+                            </div>
+                            <div>
+                                <p class="text-center review-text">Collaborateurs à votre service</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+    </div>
+    <!-- brands -->
+    <div class="bg-white py-10">
+        <div class="w-full  bg-white container mx-auto px-10 overflow-hidden rounded-xl p-6 justify-center">
+            <h1 class="text-4xl font-bold text-center text-[#005792] mb-4">Notre engagement</h1>
+            <p class="text-gray-600 text-center text-xl font-semibold mb-4 text-gray-800">Des équipements de qualité
+                pour une performance optimale</p>
+            <p class="text-gray-600 text-center">Parce que nos installations sont conçues pour le long terme, nous ne
+                travaillons qu’avec du matériel premium, reconnu et offrant les meilleurs rendements et garanties du
+                marché.</p>
+            <p class="text-gray-600 text-center">Le matériel que nous vous proposons a été étudié, testé, et a fait ses
+                preuves.</p>
+            <!-- <h2 class="text-xl font-bold text-center mb-6 text-gray-700">LE MEILLEUR MATÉRIEL DU MARCHÉ</h2> -->
+
+            <!-- Main scroller wrapper with overflow hidden to hide images outside the viewport -->
+            <div class="relative w-full overflow-hidden py-6">
+                <!--
+                This is the actual animated container.
+                It holds two identical sets of images to create the infinite loop effect.
+            -->
+                <div class="scrolling-container">
+                    <!-- First set of images -->
+                    <img src="../src/brands/huawei.png" alt="Placeholder Image 1"
+                        class="w-48 rounded-xl object-contain bg-white flex-shrink-0 carousel-item-spacing">
+                    <img src="../src/brands/deye.png" alt="Placeholder Image 2"
+                        class="w-36 rounded-xl object-contain bg-white flex-shrink-0 carousel-item-spacing">
+                    <img src="../src/brands/euro_tray.png" alt="Placeholder Image 3"
+                        class="w-48 rounded-xl object-contain bg-white flex-shrink-0 carousel-item-spacing">
+                    <img src="../src/brands/jinko_solar.png" alt="Placeholder Image 4"
+                        class="w-48 rounded-xl object-contain bg-white flex-shrink-0 carousel-item-spacing">
+                    <img src="../src/brands/kbe_berlin.png" alt="Placeholder Image 5"
+                        class="w-36 rounded-xl object-contain bg-white flex-shrink-0 carousel-item-spacing">
+                    <img src="../src/brands/suntherm.png" alt="Placeholder Image 6"
+                        class="w-56 rounded-xl object-contain bg-white flex-shrink-0 carousel-item-spacing">
+                    <img src="../src/brands/tw_solar.png" alt="Placeholder Image 6"
+                        class="w-48 rounded-xl object-contain bg-white flex-shrink-0 carousel-item-spacing">
+
+                    <!-- Second, identical set of images to create the illusion of an infinite loop -->
+                    <img src="../src/brands/huawei.png" alt="huawei"
+                        class="w-48 rounded-xl object-contain bg-white flex-shrink-0 carousel-item-spacing">
+                    <img src="../src/brands/deye.png" alt="deye"
+                        class="w-36 rounded-xl object-contain bg-white flex-shrink-0 carousel-item-spacing">
+                    <img src="../src/brands/euro_tray.png" alt="eurotray"
+                        class="w-48 rounded-xl object-contain bg-white flex-shrink-0 carousel-item-spacing">
+                    <img src="../src/brands/jinko_solar.png" alt="Placeholder Image 4"
+                        class="w-48 rounded-xl object-contain bg-white flex-shrink-0 carousel-item-spacing">
+                    <img src="../src/brands/kbe_berlin.png" alt="Placeholder Image 5"
+                        class="w-36 rounded-xl object-contain bg-white flex-shrink-0 carousel-item-spacing">
+                    <img src="../src/brands/suntherm.png" alt="Placeholder Image 6"
+                        class="w-56 rounded-xl object-contain bg-white flex-shrink-0 carousel-item-spacing">
+                    <img src="../src/brands/tw_solar.png" alt="Placeholder Image 6"
+                        class="w-48 rounded-xl object-contain flex-shrink-0 carousel-item-spacing">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-10">
+        <a href="../index.html" class="text-[#ff6f00] font-semibold hover:underline">&larr; Retour </a>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-white py-6 text-center text-gray-600 shadow-inner mt-12">
+        <div class="container mx-auto px-6">
+            <p>&copy; 2025 SEWT-GROUP. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+    <script src="src/script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
